@@ -1,0 +1,68 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Payment Complet, Your payment was successfull</title>
+
+    <link rel="stylesheet" href="CSS Folder/style.css">
+    <script src="Javascript Folder/success.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div class="header-top">
+            <img src= "Image Folder/logo.png" alt="Logo">
+            <h1>My Bookshop</h1>
+            <div class ="spacer"></div>
+        </div>
+
+        <nav class ="desktop-nav">
+            <a href="index.html">Home</a> 
+            <a href="index.html">About Us</a> 
+            <a href="index.html">Contact Us</a> 
+        </nav>
+
+        <div class="mobile-nav-bar">
+            <h1>My Bookshop</h1>
+            <button class="hamburger" id="menuBtn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <div class="mobile-dropdown" id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="index.html">About Us</a>
+            <a href="index.html">Contact Us</a>
+        </div>
+
+    </div>
+    
+    <main class="success-main">
+
+        <div class="success-box">
+            <div class="success-icon">✓</div>
+            <h2>You have successfuly entered your credit card details. Thank you for your payment</h2>
+            <p id="cardInfo"></p>
+
+            <div class="success-order" id="successOrder"></div>
+
+            <div class="success-total">
+                Total charged: <strong id="successTotal"></strong>
+            </div>
+
+            <a href="index.html" class="back-btn">Back to Bookstore</a>
+        </div>
+
+    </main>
+    
+    <footer>
+        &copy; 2026 My Bookstore. All rights reserved.
+    </footer>
+
+ 
+</body>
+</html>

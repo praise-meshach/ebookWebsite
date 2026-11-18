@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Bookshop, Homea page</title>
+
+    <link rel="stylesheet" href="CSS Folder/style.css">
+    <script src="Javascript Folder/index.js"></script>
+
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div class="header-top">
+            <img src= "Image Folder/logo.png" alt="Logo">
+            <h1>My Bookshop</h1>
+            <div class ="spacer"></div>
+        </div>
+
+        <nav class ="desktop-nav">
+            <a href="index.html">Home</a> 
+            <a href="index.html">About Us</a> 
+            <a href="index.html">Contact Us</a> 
+        </nav>
+
+        <div class="mobile-nav-bar">
+            <h1>My Bookshop</h1>
+            <button class="hamburger" id="menuBtn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <div class="mobile-dropdown" id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="index.html">About Us</a>
+            <a href="index.html">Contact Us</a>
+        </div>
+
+    </div>
+
+    <main>
+        <p class="section-heading"></p>
+
+        <div class="book-list">
+
+            <div class="book">
+                <img src="Image Folder/Anatomy of an Alibi.jpg" alt="Anatomy of an Alibi, book conver 1">
+                <div class ="book-right">
+                    <div class="des">
+                        <p class="book-title">Anatomy of an Alibi</p>
+                        <p class="book-author">Ashley Elston</p>
+                        <p class="book-desc">When two strangers agree to swap identities for just twelve hours, neither expects it to end in murder. Camille is trapped in a controlling marriage to high-powered lawyer Ben, desperate to uncover the secrets he has spent years hiding from her. Aubrey carries a decade-old wound she believes Ben is responsible for, and she's willing to risk everything to get the truth. Their plan seems simple — until Ben turns up dead the next morning. With only one alibi between them and a detective closing in, both women must decide how far they'll go to protect themselves and each other in this razor-sharp thriller full of twists.</p>
+                        <p class="book-price">£12.99</p>
+                    </div>
+                    
+                    <div class="book-footer">
+                        <div class="basket-controls">
+                            <label class="basket-checkbox">
+                                <input type="checkbox" class="book-select"
+                                    data-title="Anatomy of an Alibi"
+                                    data-price="12.99">
+                                Add to order
+                            </label>
+                            <div class="qty-control">
+                                <button class="qty-btn" onclick="changeQty(this, -1)">-</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn" onclick="changeQty(this, 1)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="Image Folder/Dear Debbie.jpg" alt="Dear Debbie,book conver 2">
+                <div class ="book-right">
+                    <div class="des">
+                        <p class="book-title">Dear Debbie</p>
+                        <p class="book-author">Freida McFadden</p>
+                        <p class="book-desc">For years, advice columnist Debbie Mullen has been the voice New England women turn to when their marriages crumble and their husbands disappoint them. She has always known exactly what to say — be patient, be practical, be the bigger person. But now Debbie's own life is unravelling at the seams. She's lost her job, her teenage daughters are hiding something from her, and a tracking app on her husband's phone is revealing secrets she never wanted to find. Done with being reasonable, done with giving second chances, Debbie decides it's finally time to take her own advice — and deliver the payback every person in her life has long deserved.</p>
+                        <p class="book-price">£11.99</p>
+                    </div>
+                    
+                    <div class="book-footer">
+                        <div class="basket-controls">
+                            <label class="basket-checkbox">
+                                <input type="checkbox" class="book-select"
+                                    data-title="Dear Debbie"
+                                    data-price="11.99">
+                                Add to order
+                            </label>
+                            <div class="qty-control">
+                                <button class="qty-btn" onclick="changeQty(this, -1)">-</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn" onclick="changeQty(this, 1)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="Image Folder/This Story Might Save Your Life.jpg" alt="This Story Might Save Your Life, book conver 3">
+                <div class ="book-right">
+                    <div class="des">
+                        <p class="book-title">This Story Might Save Your Life</p>
+                        <p class="book-author">Tiffany Crum</p>
+                        <p class="book-desc">Benny and Joy have built one of the world's most beloved podcasts on a simple idea: survival stories are worth telling. Each week, millions of listeners tune in for tales of ordinary people who defied the odds, delivered with warmth, humour, and hope. But when Benny arrives at Joy's home one morning to find shattered glass and no sign of her or her husband, their next survival story might be their own. Racing against time as police zero in on him as the prime suspect, Benny follows the only clue left behind — an unfinished memoir full of secrets neither he nor their devoted fans ever suspected Joy was keeping.</p>
+                        <p class="book-price">£13.99</p>
+                    </div>
+                    
+                    <div class="book-footer">
+                        <div class="basket-controls">
+                            <label class="basket-checkbox">
+                                <input type="checkbox" class="book-select"
+                                    data-title="This Story Might Save Your Life"
+                                    data-price="13.99">
+                                Add to order
+                            </label>
+                            <div class="qty-control">
+                                <button class="qty-btn" onclick="changeQty(this, -1)">-</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn" onclick="changeQty(this, 1)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="Image Folder/This Book Made Me Think of You.jpg" alt="This Book Made Me Think of You,book conver 4">
+                <div class ="book-right">
+                    <div class="des">
+                        <p class="book-title">This Book Made Me Think of You</p>
+                        <p class="book-author">Libby Page</p>
+                        <p class="book-desc">Five months after losing her husband Joe, Tilly Nightingale receives a call from her local bookshop: there's a birthday gift waiting for her — one Joe arranged before he died. Inside is the most extraordinary present she could have imagined: twelve carefully chosen books, one to be read each month, each one a gentle nudge toward living again. As Tilly begins to document her reading journey online, strangers from around the world start following along, and something unexpected begins to grow. Tender, funny, and quietly life-affirming, this is a story about grief, books, and the surprising ways love finds a way to reach us even after it's gone.</p>
+                        <p class="book-price">£10.99</p>
+                    </div>
+                    
+                    <div class="book-footer">
+                        <div class="basket-controls">
+                            <label class=" basket-checkbox">
+                                <input type="checkbox" class="book-select"
+                                    data-title="This Book Made Me Think of You"
+                                    data-price="10.99">
+                                Add to order
+                            </label>
+                            <div class="qty-control">
+                                <button class="qty-btn" onclick="changeQty(this, -1)">-</button>
+                                <span class="qty-value">1</span>
+                                <button class="qty-btn" onclick="changeQty(this, 1)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="order-bar" id="orderBar">
+            <div class="order-bar-info">
+                <span id="orderCount">0 books selected</span>
+                <span class="order-total">Total: <strong id="orderTotal">£0.00</strong></span>
+            </div>
+            <button class="order-btn" id="checkoutBtn" onclick="proceedToCheckout()">
+                Proceed to Payment →
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 My Bookstore. All rights reserved.
+    </footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Card Details, Enter card Details</title>
+
+    <link rel="stylesheet" href="CSS Folder/style.css">
+
+    <script src="Javascript Folder/pay.js"></script>
+
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div class="header-top">
+            <img src= "Image Folder/logo.png" alt="Logo">
+            <h1>My Bookshop</h1>
+            <div class ="spacer"></div>
+        </div>
+
+        <nav class ="desktop-nav">
+            <a href="index.html">Home</a> 
+            <a href="index.html">About Us</a> 
+            <a href="index.html">Contact Us</a> 
+        </nav>
+
+        <div class="mobile-nav-bar">
+            <h1>My Bookshop</h1>
+            <button class="hamburger" id="menuBtn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <div class="mobile-dropdown" id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="index.html">About Us</a>
+            <a href="index.html">Contact Us</a>
+        </div>
+
+    </div>
+
+    <main class="payment-main">
+
+        <!-- Order summary pulled from sessionStorage -->
+        <div class="order-summary" id="orderSummary">
+            <h2>Your Order</h2>
+            <div id="summaryItems"></div>
+            <div class="summary-total">
+                Total: <strong id="summaryTotal"></strong>
+            </div>
+        </div>
+
+        <form class="paymnet-form-box">
+
+            <p class="section-heading">Payment Options</p>
+            <img src= "Image Folder/Payment Options.png" alt="Payment-Options">
+            <div class = payment-row>
+                <label for="cc">Card Number:</label>
+                <input type="text" name="CardNumber" id="cc"> <br>
+            </div>
+
+            <div class = payment-row>
+                <label for="m">Expiration Date:</label>
+                <select name="ExpirationMonth" id="m">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+
+                <select name="ExpirationYear" id="y">
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2031">2031</option>
+                </select>
+            </div>
+
+             
+            <label for="cvv">Security Code:</label>
+            <input type="text" name="cvv" id="cvv">
+
+            <p class="cvv-text">
+                (3-4 digit code normaly on the back of your card)
+            </p> <br>
+
+            <button id="btn" class="pay-btn">Continue</button>
+        </form>
+    </main>
+
+    
+    <footer>
+        &copy; 2026 My Bookstore. All rights reserved.
+    </footer>
+
+</body>
+</html>
