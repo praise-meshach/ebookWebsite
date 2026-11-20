@@ -8,7 +8,7 @@ JavaScript code. Amongst other things this JavaScript code will check (1) the to
 digits for credit cards is 16, and  (2) the MasterCard number starting with 51, 52, 53, 54, or 55, (3) the 
 card is not expired, (4) the total number of digits for security code is 3 or 4.  If the JavaScript check is 
 unsatisfied, users are asked to re-fill in the form. On passing validation, use JavaScript to send a POST 
-request to the server (https://mudfoot.doc.stu.mmu.ac.uk/node/api/creditcard). The server expects raw 
+request to the server. The server expects raw 
 JSON to be sent in the following format:          
           {           
                     “master_card”: 5222123456781234,          
